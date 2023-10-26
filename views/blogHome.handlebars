@@ -1,0 +1,33 @@
+<div class="container my-4">
+    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+    <div class="col-lg-6 px-0">
+      <h1 class="display-4 fst-italic center">The Fascinating World of Machine Learning: A Deep Dive into the Future of Technology</h1>
+      <p class="lead my-3">In the realm of technology, few concepts have garnered as much attention and excitement as machine learning. Machine learning, a subset of artificial intelligence, is revolutionizing the way we interact with the world and the tools we use to make sense of data. In this blog post, we will embark on a journey to explore the depths of machine learning, understanding its core concepts, applications, and the impact it has on various sectors.</p>
+      <p class="lead mb-0"><a href="/blogpost/the-fascinating-world-of-machine-learning" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+    </div>
+    </div>
+    <div class="row">
+    {{#each blogs}}
+     
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col-auto d-none d-lg-block">
+          <img src="{{this.img_url}}"  class="img-thumbnail " width="200px" >
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">Technology</strong>
+          <h3 class="mb-0">{{this.title}}</h3>
+          <div class="mb-1 text-body-secondary">{{this.date}}</div>
+          <p class="mb-auto">{{this.content.Introduction}}</p>
+          <a href="/blogpost/{{this.slug}}" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+ {{/each}}
+ </div>
+ 
+</div>

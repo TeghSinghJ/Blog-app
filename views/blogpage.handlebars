@@ -1,0 +1,13 @@
+<div class="container my-4">
+    <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">{{title}}</h2>
+        <p class="blog-post-meta">{{date}} by <b>{{author}}</b></p>
+
+        {{!-- <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p> --}}
+        <hr>
+        {{#each content}}
+        <h2>{{@key}}</h2>
+        <p>{{this}}</p>
+        {{/each}}
+    </article>
+</div>
